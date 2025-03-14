@@ -23,20 +23,20 @@ public class EmployeeManagement {
         List<Employee> employees = new ArrayList<>();
         System.out.print("Enter the number of employees: ");
         int numberOfEmployees = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine();
 
         for (int i = 0; i < numberOfEmployees; i++) {
             System.out.println("Enter details for Employee " + (i + 1) + ":");
             System.out.print("ID: ");
             int id = scanner.nextInt();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
             
             System.out.print("Name: ");
             String name = scanner.nextLine();
 
             System.out.print("Salary: ");
             double salary = scanner.nextDouble();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
 
             employees.add(new Employee(id, name, salary));
         }
