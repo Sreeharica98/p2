@@ -4,14 +4,10 @@ import java.util.Scanner;
 
 public class AnagramCheck {
 
-    // Method to check if two strings are anagrams
     public static boolean isAnagram(String str1, String str2) {
-        // Quick length check before further processing
         if (str1.length() != str2.length()) {
             return false;
         }
-
-        // Frequency count map for character occurrences
         Map<Character, Integer> charCount = new HashMap<>();
 
         for (char c : str1.toCharArray()) {
@@ -28,7 +24,6 @@ public class AnagramCheck {
         return true;
     }
 
-    // Main method — Entry point for the program
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Enter the first string: ");
